@@ -1,66 +1,66 @@
 {
-  "compilerOptions": {
-      /* Basic Options */
-      "target": "esnext",
-      "module": "commonjs",
-      "lib": [
-          "es2017"
-      ],
-      "allowJs": true,
-      "jsx": "react-native",
-      "noEmit": true,
-      "isolatedModules": true,
+    "compilerOptions": {
+        /* Basic Options */
+        "target": "esnext",
+        "module": "commonjs",
+        "lib": [
+            "es2017"
+        ],
+        "allowJs": true,
+        "jsx": "react-native",
+        "noEmit": true,
+        "isolatedModules": true,
 
-      "removeComments": true,
-      "resolveJsonModule": true,
-      "pretty": true,
-      "skipLibCheck": true,
+        "removeComments": true,
+        "resolveJsonModule": true,
+        "pretty": true,
+        "skipLibCheck": true,
 
-      /* Strict Type-Checking Options */
-      "strict": true,
-      "noImplicitAny": true,
-      "strictNullChecks": true,
-      "strictFunctionTypes": true,
-      "strictPropertyInitialization": true,
-      "noImplicitThis": true,
-      "alwaysStrict": true,
+        /* Strict Type-Checking Options */
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictPropertyInitialization": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
 
-      /* Additional Checks */
-      "noUnusedLocals": true,
-      "noUnusedParameters": true,
-      "noImplicitReturns": true,
-      "noFallthroughCasesInSwitch": true,
+        /* Additional Checks */
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
 
-      /* Module Resolution Options */
-      "moduleResolution": "node",
-      "baseUrl": "./",
-      "paths": {
-          "@/*": [
-              "@/*"
-          ]
-      },
+        /* Module Resolution Options */
+        "moduleResolution": "node",
+        "baseUrl": "./",
+        "paths": {
+            "@/*": [
+                "@/*"
+            ]
+        },
 
-      "typeRoots": [
-          "node_modules/@types",
-          "@",
-          "src",
-          "types"
-      ],
-      "types": [
-          "node",
-      ],
-      "allowSyntheticDefaultImports": true,
-      "esModuleInterop": true
-  },
-  "include": [
-      "@",
-      "src",
-      "types"
-  ],
-  "exclude": [
-      "node_modules",
-      ".*",
-      "babel.config.js",
-      "metro.config.js",
-  ]
+        "typeRoots": [
+            "node_modules/@types",
+            "@",
+            "src",
+            "types"
+        ],
+        "types": [
+            "node"
+        ],
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true
+    },
+    "include": [
+        "@",
+        "src",
+        "types"
+    ],
+    "exclude": [
+        "node_modules",
+        ".*",
+        "babel.config.js",
+        "metro.config.js"
+    ]
 }
