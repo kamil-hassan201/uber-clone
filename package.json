@@ -16,6 +16,7 @@
     "dependencies": {
         "@babel/eslint-parser": "^7.18.2",
         "@react-native-community/eslint-config": "^3.0.3",
+        "@react-native-community/geolocation": "^2.1.0",
         "@react-native-community/picker": "^1.8.1",
         "@react-navigation/native": "^6.0.10",
         "@react-navigation/native-stack": "^6.6.2",
@@ -42,7 +43,7 @@
     "devDependencies": {
         "@babel/core": "^7.12.9",
         "@babel/eslint-plugin": "^7.17.7",
-        "@types/react": "^18.0.14",
+        "@types/react": "~17.0.21",
         "@types/react-native": "~0.66.13",
         "@typescript-eslint/eslint-plugin": "^5.29.0",
         "@typescript-eslint/parser": "^5.29.0",

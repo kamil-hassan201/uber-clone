@@ -1,5 +1,5 @@
 interface initialStateT {
-    origin: string | null;
-    destination: string | null;
-    travelTimeInformation: string | null;
+    origin: any | null;
+    destination: any | null;
+    travelTimeInformation: any | null;
 }
