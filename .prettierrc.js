@@ -9,7 +9,7 @@ module.exports = {
     tabWidth: 4,
     trailingComma: "all",
     useTabs: false,
-    // printWidth: 160,
+    printWidth: 120,
     overrides: [
         {
             files: "*.json",

@@ -58,7 +58,7 @@ module.exports = {
         "max-len": [
             "error",
             {
-                code: 160,
+                code: 180,
                 ignoreStrings: true,
                 ignoreTemplateLiterals: true,
                 ignoreComments: true,
