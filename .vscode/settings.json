@@ -1,0 +1,17 @@
+{
+    "javascript.preferences.importModuleSpecifier": "relative",
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "javascript.preferences.quoteStyle": "double",
+    "typescript.preferences.quoteStyle": "double",
+    "typescriptHero.imports.organizeOnSave": true,
+    "typescriptHero.imports.stringQuoteStyle": "\"",
+    "npm-intellisense.importQuotes": "\"",
+    "typescriptHero.imports.multiLineWrapThreshold": 160,
+    "editor.formatOnSave": true,
+    "cSpell.words": [
+        "reduxjs",
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+}
