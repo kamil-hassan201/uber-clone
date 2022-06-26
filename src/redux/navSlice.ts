@@ -2,12 +2,6 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 import { RootState } from "./store";
 
-interface initialStateT {
-    origin: string | null;
-    destination: string | null;
-    travelTimeInformation: string | null;
-}
-
 const initialState: initialStateT = {
     origin: null,
     destination: null,

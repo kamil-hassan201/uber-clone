@@ -10,11 +10,15 @@
         "web": "expo start --web",
         "eject": "expo eject",
         "build:ts": "tsc",
-        "prettier:format": "prettier --write ."
+        "prettier:format": "prettier --write .",
+        "lint": "eslint \"{__tests__,@this,src}/**/*.{tsx,ts,json,js,jsx}\" --max-warnings=0 --fix"
     },
     "dependencies": {
+        "@babel/eslint-parser": "^7.18.2",
+        "@react-native-community/picker": "^1.8.1",
         "@reduxjs/toolkit": "^1.8.2",
         "@types/react-redux": "^7.1.24",
+        "babel-eslint": "^10.1.0",
         "expo": "~45.0.0",
         "expo-status-bar": "~1.3.0",
         "react": "17.0.2",
@@ -25,10 +29,16 @@
     },
     "devDependencies": {
         "@babel/core": "^7.12.9",
+        "@babel/eslint-plugin": "^7.17.7",
         "@types/react": "~17.0.21",
         "@types/react-native": "~0.66.13",
+        "@typescript-eslint/eslint-plugin": "^5.29.0",
+        "@typescript-eslint/parser": "^5.29.0",
+        "airbnb": "^0.0.2",
         "eslint": "^8.18.0",
+        "eslint-config-airbnb": "^19.0.4",
         "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-babel": "^5.3.1",
         "eslint-plugin-flowtype": "^8.0.3",
         "eslint-plugin-import": "^2.26.0",
         "eslint-plugin-jsx-a11y": "^6.6.0",
@@ -37,7 +47,7 @@
         "eslint-plugin-react-hooks": "^4.6.0",
         "husky": "^8.0.1",
         "prettier": "^2.7.1",
-        "typescript": "~4.3.5"
+        "typescript": "^4.7.4"
     },
     "private": true
 }

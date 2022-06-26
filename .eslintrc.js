@@ -1,13 +1,19 @@
 module.exports = {
     root: true,
-    plugins: ["react", "react-hooks"],
+    parser: "@typescript-eslint/parser",
+    plugins: [
+        "react",
+        "react-hooks",
+        "babel",
+        "@typescript-eslint",
+    ],
     extends: [
-        "@react-native-community",
         "plugin:react/recommended",
         "plugin:react-hooks/recommended",
         "airbnb",
         "airbnb/hooks",
         "prettier",
+        "plugin:@typescript-eslint/recommended",
     ],
     ignorePatterns: [
         "babel.config.js",
@@ -17,6 +23,7 @@ module.exports = {
     ],
     rules: {
         "no-undef": "off",
+        "no-param-reassign": 0,
         indent: [
             "error",
             4,
