@@ -81,6 +81,7 @@ module.exports = {
         "no-use-before-define": "off",
         "react-hooks/exhaustive-deps": "warn",
         "react/destructuring-assignment": "off",
+        indent: 0,
         "react/function-component-definition": [
             "off",
             {
