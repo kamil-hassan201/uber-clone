@@ -2,6 +2,7 @@ module.exports = {
     root: true,
     parser: "@typescript-eslint/parser",
     plugins: [
+        "@react-native-community",
         "react",
         "react-hooks",
         "babel",
@@ -91,6 +92,7 @@ module.exports = {
         react: {
             version: "detect",
         },
+
         "import/resolver": {
             node: {
                 extensions: [

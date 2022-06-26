@@ -1,6 +1,5 @@
 {
     "compilerOptions": {
-        /* Basic Options */
         "target": "esnext",
         "module": "commonjs",
         "lib": [
@@ -10,13 +9,10 @@
         "jsx": "react-native",
         "noEmit": true,
         "isolatedModules": true,
-
         "removeComments": true,
         "resolveJsonModule": true,
         "pretty": true,
         "skipLibCheck": true,
-
-        /* Strict Type-Checking Options */
         "strict": true,
         "noImplicitAny": true,
         "strictNullChecks": true,
@@ -24,22 +20,12 @@
         "strictPropertyInitialization": true,
         "noImplicitThis": true,
         "alwaysStrict": true,
-
-        /* Additional Checks */
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "noImplicitReturns": true,
         "noFallthroughCasesInSwitch": true,
-
-        /* Module Resolution Options */
         "moduleResolution": "node",
         "baseUrl": "./",
-        "paths": {
-            "@/*": [
-                "@/*"
-            ]
-        },
-
         "typeRoots": [
             "node_modules/@types",
             "@",
@@ -62,5 +48,6 @@
         ".*",
         "babel.config.js",
         "metro.config.js"
-    ]
+    ],
+    "extends": "expo/tsconfig.base"
 }
