@@ -1,5 +1,5 @@
 export default {
-    data: [
+    data: <navDataT[]>[
         {
             id: "123",
             title: "Get a ride",

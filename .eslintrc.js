@@ -72,6 +72,7 @@ module.exports = {
             },
         ],
         "react-hooks/rules-of-hooks": "error",
+        "arrow-body-style": 0,
         "react/jsx-props-no-spreading": "off",
         "react/no-unescaped-entities": "off",
         "react-native/no-inline-styles": "off",
