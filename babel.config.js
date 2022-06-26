@@ -9,11 +9,14 @@ module.exports = function (api) {
                     alias: {
                         assets: "./assets",
                         components: "./src/components",
-                        modules: "./src/modules",
-                        types: "./src/types",
                         constants: "./src/constants",
                         src: "./src/",
                     },
+                },
+                "module:react-native-dotenv",
+                {
+                    moduleName: "@env",
+                    path: ".env",
                 },
             ],
         ],
