@@ -13,6 +13,10 @@
         "prettier:format": "prettier --write .",
         "lint": "eslint \"{__tests__,@this,src}/**/*.{tsx,ts,json,js,jsx}\" --max-warnings=0 --fix"
     },
+    "resolutions": {
+        "@types/react": "~17.0.2",
+        "@types/react-native": "~0.66.13"
+    },
     "dependencies": {
         "@babel/eslint-parser": "^7.18.2",
         "@react-native-community/eslint-config": "^3.0.3",
@@ -43,7 +47,7 @@
     "devDependencies": {
         "@babel/core": "^7.12.9",
         "@babel/eslint-plugin": "^7.17.7",
-        "@types/react": "~17.0.21",
+        "@types/react": "~17.0.2",
         "@types/react-native": "~0.66.13",
         "@types/react-redux": "^7.1.24",
         "@typescript-eslint/eslint-plugin": "^5.29.0",
@@ -64,7 +68,7 @@
         "eslint-plugin-react-hooks": "^4.3.0",
         "husky": "^8.0.1",
         "prettier": "^2.7.1",
-        "typescript": "^4.7.4"
+        "typescript": "^4.6.3"
     },
     "private": true
 }
