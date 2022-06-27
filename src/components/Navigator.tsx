@@ -4,6 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import React, { memo } from "react";
 import HomeScreen from "src/screens/HomeScreen";
+import MapScreen from "src/screens/MapScreen";
 
 export type RootStackParamList = {
     HomeScreen: undefined;
@@ -17,7 +18,7 @@ const Navigator = memo(() => {
         <NavigationContainer>
             <Stack.Navigator>
                 <Stack.Screen name="HomeScreen" component={HomeScreen} options={{ headerShown: false }} />
-                <Stack.Screen name="MapScreen" component={HomeScreen} options={{ headerShown: false }} />
+                <Stack.Screen name="MapScreen" component={MapScreen} options={{ headerShown: false }} />
             </Stack.Navigator>
         </NavigationContainer>
     );
