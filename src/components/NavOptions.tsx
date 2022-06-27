@@ -4,13 +4,15 @@ import navData from "src/constants/navData";
 
 import NavItem from "./NavItem";
 
-const NavOptions = () => (
-    <FlatList
-        keyExtractor={(item) => item.id}
-        data={navData.data}
-        horizontal
-        renderItem={({ item }) => <NavItem {...item} />}
-    />
-);
+const NavOptions = () => {
+    return (
+        <FlatList
+            keyExtractor={(item) => item.id}
+            data={navData.data}
+            horizontal
+            renderItem={({ item }) => <NavItem {...item} />}
+        />
+    );
+};
 
 export default NavOptions;
