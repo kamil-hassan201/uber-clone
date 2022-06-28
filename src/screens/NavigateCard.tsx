@@ -4,8 +4,6 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
 import { useDispatch } from "react-redux";
-import NavFavourites from "src/components/NavFavourites";
-import NavigateOptionArea from "src/components/NavigateOptionArea";
 import routes from "src/constants/routes";
 import { setDestination } from "src/redux/navSlice";
 import tw from "tailwind-react-native-classnames";
@@ -38,8 +36,8 @@ const NavigateCard = () => {
                     enableHighAccuracyLocation
                 />
             </View>
-            <NavFavourites />
-            <NavigateOptionArea />
+            {/* <NavFavourites /> */}
+            {/* <NavigateOptionArea /> */}
         </View>
     );
 };
