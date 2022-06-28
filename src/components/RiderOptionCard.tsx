@@ -14,7 +14,6 @@ const RiderOptionCard = () => {
                 <View style={tw`absolute top-3 left-5 `}>
                     <TouchableOpacity
                         onPress={() => {
-                            console.log("Pressed");
                             navigation.navigate(routes.NAVIGATE_CARD);
                         }}
                         style={tw`p-3`}
