@@ -9,7 +9,6 @@ import tw from "tailwind-react-native-classnames";
 
 const HomeScreen = () => {
     const dispatch = useDispatch();
-    // eslint-disable-next-line global-require
     return (
         <SafeAreaView style={tw`bg-white h-full`}>
             <View style={tw`p-5`}>
