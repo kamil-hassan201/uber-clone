@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FlatList, Image, Text, TouchableOpacity, View } from "react-native";
 import { useSelector } from "react-redux";
+import SURGE_CHARGE_RATE from "src/constants/charge_rate";
 import riderOption from "src/constants/riderOption";
 import { selectTravelTimeInformation } from "src/redux/navSlice";
 import tw from "tailwind-react-native-classnames";
@@ -12,7 +13,7 @@ const RiderOptionCard = () => {
     const travelTimeInformation = useSelector(selectTravelTimeInformation);
     return (
         <View style={tw`bg-white flex-grow`}>
-            <RiderOptionCardHeader distance={travelTimeInformation.distance.text} />
+            <RiderOptionCardHeader distance={travelTimeInformation?.distance.text} />
             <FlatList
                 keyExtractor={(item) => item.id}
                 data={riderOption.data}
@@ -31,9 +32,18 @@ const RiderOptionCard = () => {
                         />
                         <View style={tw`-ml-6`}>
                             <Text style={tw`font-semibold`}> {item.title} </Text>
-                            <Text> {travelTimeInformation.duration.text} Travel Time </Text>
+                            <Text> {travelTimeInformation?.duration.text} </Text>
                         </View>
-                        <Text style={tw`text-xl`}> $99 </Text>
+                        <Text style={tw`text-xl`}>
+                            {new Intl.NumberFormat("bd", {
+                                style: "currency",
+                                currency: "BDT",
+                            }).format(
+                                travelTimeInformation
+                                    ? travelTimeInformation.duration.value * item.multiplier * SURGE_CHARGE_RATE.data
+                                    : 0,
+                            )}
+                        </Text>
                     </TouchableOpacity>
                 )}
             />
