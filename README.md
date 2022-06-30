@@ -4,7 +4,8 @@ Uber - 2.0 is a mobile app created with React Native. The idea of this project i
 ## Screen Shots
 
 #### Home Screen: 
-![WhatsApp Image 2022-07-01 at 12 01 34 AM](https://user-images.githubusercontent.com/98449931/176724753-079a9f51-bb15-4972-a6ea-ce03c1f88eb7.jpeg || width=100)
+![WhatsApp Image 2022-07-01 at 12 01 34 AM](https://user-images.githubusercontent.com/98449931/176724753-079a9f51-bb15-4972-a6ea-ce03c1f88eb7.jpeg)
+<img src="https://user-images.githubusercontent.com/98449931/176724753-079a9f51-bb15-4972-a6ea-ce03c1f88eb7.jpeg" width="100" >
 
 #### Home Screen (Auto Suggestion): 
 ![WhatsApp Image 2022-07-01 at 12 01 34 AM(1)](https://user-images.githubusercontent.com/98449931/176725308-9f2455dd-400a-42e3-bb15-2bcac895b1e3.jpeg)
