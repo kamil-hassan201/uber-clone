@@ -5,7 +5,11 @@ import { Icon } from "react-native-elements/dist/icons/Icon";
 import routes from "src/constants/routes";
 import tw from "tailwind-react-native-classnames";
 
-const RiderOptionCardHeader = () => {
+interface RiderOptionCardHeaderProps {
+    distance: string;
+}
+
+const RiderOptionCardHeader = (props: RiderOptionCardHeaderProps) => {
     const navigation = useNavigation<NavT>();
 
     return (
@@ -19,7 +23,7 @@ const RiderOptionCardHeader = () => {
                 <Icon name="chevron-left" type="fontawesome" />
             </TouchableOpacity>
 
-            <Text style={tw`text-center py-5 text-xl`}>Select a Ride</Text>
+            <Text style={tw`text-center py-5 text-xl`}>Select a Ride - {props.distance}</Text>
         </View>
     );
 };
